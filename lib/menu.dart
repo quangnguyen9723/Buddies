@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         '/Home': (context) => MyApp(),
         '/Profile': (context) => MyApp(),
       },
-      // title: 'Flutter layout demo',
+      title: 'Flutter layout demo',
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xfff1e7f3),
