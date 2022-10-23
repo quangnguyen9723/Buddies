@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -105,8 +106,8 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class MyMenu extends StatelessWidget {
+  const MyMenu({Key? key}) : super(key: key);
 
 // This widget is the root of your application.
   @override
@@ -127,5 +128,5 @@ class MyApp extends StatelessWidget {
 }
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyMenu());
 }

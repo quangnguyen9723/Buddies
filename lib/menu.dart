@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,12 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/Map': (context) => HomePage(),
+        '/Map': (context) => MyMenu(),
         // When navigating to the "/second" route, build the SecondScreen widget.
         '/Home': (context) => MyApp(),
-        '/Profile': (context) => ,
+        '/Profile': (context) => MyApp(),
       },
-      title: 'Flutter layout demo',
+      // title: 'Flutter layout demo',
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xfff1e7f3),
@@ -80,7 +81,8 @@ class MyApp extends StatelessWidget {
                 Navigator.pushNamed(context, "/Home");
                 break;
               case 2:
-                Navigator.pushNamed(context, "/Profile")
+                Navigator.pushNamed(context, "/Profile");
+                break;
           }
           },
         ),
